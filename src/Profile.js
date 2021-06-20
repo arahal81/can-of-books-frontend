@@ -7,20 +7,20 @@ class Profile extends Component {
         const { isAuthenticated,user } = this.props.auth0;
         return (
 
-
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
             <>
                 {isAuthenticated&&
-                    
+
                         <>
-                            <div className="grid">
-                                <Card>
-                                    <Card.Img src={user.picture} alt='' variant="top" style={{ width: '15rem' ,height:'15rem'}} />
+                            
+                                <Card style={{width: '15.4rem' ,height:'25rem',borderColor:'black ',padding:'0.2rem'}}>
+                                    <Card.Img src={user.picture} alt=''  style={{ width: '15rem' ,height:'15rem'}} />
                                     <Card.Body>
                                         <Card.Title>Name: {user.name}</Card.Title>
                                         <Card.Text>Email: {user.email}</Card.Text>
                                     </Card.Body>
                                 </Card>
-                            </div>
+                            
                         </>
                     
               }
