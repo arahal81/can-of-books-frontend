@@ -1,12 +1,13 @@
 import React from 'react';
 import Header from './Header';
-import IsLoadingAndError from './IsLoadingAndError';
+//import IsLoadingAndError from './IsLoadingAndError';
 import Footer from './Footer';
 import {BrowserRouter as Router,Switch,Route} from "react-router-dom";
 import MyFavoriteBooks from './MyFavoriteBooks';
 import Login from './Login';
 import Profile from './Profile';
 import { withAuth0 } from '@auth0/auth0-react';
+
 class App extends React.Component {
 
   render() {
@@ -14,7 +15,7 @@ class App extends React.Component {
     return(
       <>
         <Router>
-          <IsLoadingAndError>
+          {/* <IsLoadingAndError> */}
             <Header />
               <Switch>
                 <Route exact path="/">
@@ -25,7 +26,7 @@ class App extends React.Component {
                 <Route exact path="/Profile" component={Profile} />
               </Switch>
             <Footer />
-          </IsLoadingAndError>
+          {/* </IsLoadingAndError> */}
         </Router>
       </>
     )
