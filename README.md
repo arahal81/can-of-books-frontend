@@ -1,21 +1,17 @@
-#  can-of-books-frontend
-
-**Author**: mahmoud , ali
-**Version**: 1.0.1 
+# can-of-books-backend
+**Author**: ali rahhal & mahmoud almahmoud
+**Version**: 1.0.3
 
 ## Overview
-<!-- Provide a high level overview of what this application is and why you are building it, beyond the fact that it's an assignment for this class. (i.e. What's your problem domain?) -->
-
+here we will get request from user to add new book to database or delete one
 ## Getting Started
-<!-- What are the steps that a user must take in order to build this app on their own machine and get it running? -->
+user has to enter with his authorized email
 
 ## Architecture
-<!-- Provide a detailed description of the application design. What technologies (languages, libraries, etc) you're using, and any other relevant design information. -->
+javaScript,mongodb, express,cors and dotenv
 
 ## Change Log
-<!-- Use this area to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an example:
-
-01-01-2001 4:59pm - Application now has a fully-functional express server, with a GET route for the location resource. -->
+22/6/2021 app now allow user to add his favorite books and delete them
 
 ## Credit and Collaborations
-<!-- Give credit (and a link) to other people or resources that helped you build this application. -->
+Ali Rahhal
