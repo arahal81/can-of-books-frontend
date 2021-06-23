@@ -31,8 +31,8 @@ class MyFavoriteBooks extends React.Component {
                     <p>{item.description}</p>
                     <hr/>
                     <h4>{item.status}</h4>
-                    <Button onClick={()=>{this.props.deleteBook(item._id)}} variant="danger">Delet a Book</Button>
-                    <Button onClick={()=>{this.props.handleShowUpate(item,idx)}} variant="danger">Update</Button>
+                    <Button onClick={()=>{this.props.deleteBook(item._id)}} style={{ margin: '0.2rem' }} variant="danger">Delet a Book</Button>
+                    <Button onClick={()=>{this.props.handleShowUpate(item,idx)}} style={{ margin: '0.2rem' }} variant="success">Update</Button>
                   </Carousel.Caption>
                 </Carousel.Item>
                 
