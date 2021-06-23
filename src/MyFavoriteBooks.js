@@ -24,14 +24,15 @@ class MyFavoriteBooks extends React.Component {
                     className="d-block w-100"
                     src={''}
                     alt=' '
-                    style={{ height: '30rem' }}
+                    style={{ height: '40rem' }}
                   />
                   <Carousel.Caption style={{ backgroundColor: 'rgba(0, 0, 0, 0.5)', color: '#F4F4F4', fontSize: '1.5rem', fontWeight: 'bold' }}>
                     <h1>{item.name}</h1>
                     <p>{item.description}</p>
                     <hr/>
                     <h4>{item.status}</h4>
-                    <Button onClick={()=>{this.props.deleteBook(idx)}} variant="danger">Delet a Book</Button>
+                    <Button onClick={()=>{this.props.deleteBook(item._id)}} variant="danger">Delet a Book</Button>
+                    <Button onClick={()=>{this.props.handleShowUpate(item,idx)}} variant="danger">Update</Button>
                   </Carousel.Caption>
                 </Carousel.Item>
                 
