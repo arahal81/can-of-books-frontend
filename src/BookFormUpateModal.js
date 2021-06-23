@@ -44,7 +44,7 @@ class BookFormUpateModal extends React.Component {
                     </Modal.Body>
                     <Modal.Footer>
                         <Button variant="secondary" onClick={this.props.handleCloseUpate}>Close</Button>
-                        <Button type="submit" variant="primary">Update</Button>
+                        <Button type="submit" variant="success">Update</Button>
                     </Modal.Footer>
                     </form> 
                 </Modal>
